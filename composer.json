@@ -1,0 +1,21 @@
+{
+    "name": "heco/usermanager",
+    "description": "User Verwaltung",
+    "require": {
+        "php": "^8.0.2",
+        "lab404/laravel-impersonate": "1.7",
+        "livewire/livewire": "2.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Heco\\Usermanager\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Reinhold-Jesse",
+            "email": "reinhold.jesse@gmx.de"
+        }
+    ],
+    "minimum-stability": "dev"
+}
