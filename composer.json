@@ -3,8 +3,8 @@
     "description": "User Verwaltung",
     "require": {
         "php": "^8.0.2",
-        "lab404/laravel-impersonate": "1.7",
-        "livewire/livewire": "2.5"
+        "lab404/laravel-impersonate": "^1.7",
+        "livewire/livewire": "^2.5"
     },
     "autoload": {
         "psr-4": {
