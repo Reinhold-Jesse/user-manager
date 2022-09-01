@@ -1,6 +1,6 @@
 <?php
 
-namespace Heco\Usermanager\Livewire\User;
+namespace Reinholdjesse\Usermanager\Livewire\User;
 
 use App\Models\User;
 use Exception;

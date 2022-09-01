@@ -1,6 +1,6 @@
 <?php
 
-namespace Heco\Usermanager\Controllers;
+namespace Reinholdjesse\Usermanager\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;

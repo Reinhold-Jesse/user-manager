@@ -8,7 +8,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Heco\\Usermanager\\": "src/"
+            "Reinholdjesse\\Usermanager\\": "src/"
         }
     },
     "authors": [
@@ -17,5 +17,15 @@
             "email": "reinhold.jesse@gmx.de"
         }
     ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Reinholdjesse\\Usermanager\\UsermanagerServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "dev"
 }

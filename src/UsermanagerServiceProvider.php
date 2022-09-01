@@ -1,12 +1,12 @@
 <?php
 
-namespace Heco\Usermanager;
+namespace Reinholdjesse\Usermanager;
 
-use Heco\Usermanager\Livewire\User\Edit;
-use Heco\Usermanager\Livewire\User\Index;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
+use Reinholdjesse\Usermanager\Livewire\User\Edit;
+use Reinholdjesse\Usermanager\Livewire\User\Index;
 
 class UsermanagerServiceProvider extends ServiceProvider
 {
