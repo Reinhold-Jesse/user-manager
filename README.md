@@ -1,6 +1,29 @@
 # User Managment Package
 
-## Install
+![preview](./img/view.png)
+
+## # Install via Composer
+
+```bash
+composer require reinholdjesse/usermanager
+```
+
+---
+
+## Start Route
+
+http://your_url/dashboard/user
+
+```php
+{{ route('package.users.manager.index'); }}
+```
+
+---
+
+## # Install in App Root (Optional)
+
+Create new folder in your root aplication with name **packages/reinholdjesse/usermanager**.
+Copy Package files in the folder.
 
 **File** -> config\app.php
 
@@ -8,7 +31,7 @@
 /*
 * Package Service Providers...
 */
-    Heco\Usermanager\UserManagerServiceProvider::class,
+    Reinholdjesse\Usermanager\UserManagerServiceProvider::class,
 /*
 * Application Service Providers...
 */
@@ -19,7 +42,7 @@
 ```json
 "autoload": {
     "psr-4": {
-        "Heco\\Usermanager\\": "packages/heco/usermanager/src/",
+        "Reinholdjesse\\Usermanager\\": "packages/reinholdjesse/usermanager/src/",
         "App\\": "app/",
         "Database\\Factories\\": "database/factories/",
         "Database\\Seeders\\": "database/seeders/"
@@ -27,26 +50,26 @@
 },
 ```
 
-## Add User Model
+### Install Required Packages
+
+```bash
+composer require lab404/laravel-impersonate
+```
+
+### Add User Model
 
 ```php
 use Lab404\Impersonate\Models\Impersonate;
 
 // User class
 use Impersonate;
+//
 
-
-```
-
-## Start Route
-
-```php
-{{ route('package.users.managment.user.index'); }}
 ```
 
 ---
 
-# In your App include
+# # In your App include
 
 ## Step 1 (#Publish files)
 
