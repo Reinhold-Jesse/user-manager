@@ -2,7 +2,7 @@
 
 ![preview](./img/view.png)
 
-## # Install via Composer
+## # Install via Composer (default)
 
 ```bash
 composer require reinholdjesse/usermanager
@@ -20,7 +20,7 @@ http://your_url/dashboard/user
 
 ---
 
-## # Install in App Root (Optional)
+## # Install in App Root (optional)
 
 Create new folder in your root aplication with name **packages/reinholdjesse/usermanager**.
 Copy Package files in the folder.
@@ -69,7 +69,7 @@ use Impersonate;
 
 ---
 
-# # In your App include
+# # In your App include (optional)
 
 ## Step 1 (#Publish files)
 

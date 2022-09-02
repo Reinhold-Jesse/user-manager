@@ -1,4 +1,4 @@
-@extends('layouts.dashboard')
+{{-- @extends('layouts.dashboard')
 
 
 @section('header')
@@ -16,4 +16,18 @@
     <div class="container px-3 py-12 mx-auto">
         @livewire('user.index')
     </div>
-@endsection
+@endsection --}}
+
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="text-xl font-semibold leading-tight text-gray-800">
+            {{ __('User') }}
+        </h2>
+    </x-slot>
+
+    <div class="py-12">
+        <div class="container px-3 py-12 mx-auto">
+            @livewire('user.index')
+        </div>
+    </div>
+</x-app-layout>
