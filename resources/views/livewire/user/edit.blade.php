@@ -8,7 +8,11 @@
                         <figure class="relative">
                             <button wire:click="deleteProfilePhoto" type="button"
                                 class="absolute flex items-center justify-center w-8 h-8 text-gray-100 hover:text-red-600 top-2 right-2">
-                                <x-icon.delete class="h-6" />
+                                <svg class="h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M7 21q-.825 0-1.412-.587Q5 19.825 5 19V6H4V4h5V3h6v1h5v2h-1v13q0 .825-.587 1.413Q17.825 21 17 21ZM17 6H7v13h10ZM9 17h2V8H9Zm4 0h2V8h-2ZM7 6v13Z" />
+                                </svg>
                             </button>
                             <img src="{{ asset($profile_photo_url) }}" alt="Foto {{ $name }}"
                                 title="Foto {{ $name }}" class="block w-full" />
@@ -17,7 +21,11 @@
                         <figure class="relative">
                             <button wire:click="removeTempProfilePhoto" type="button"
                                 class="absolute flex items-center justify-center w-8 h-8 text-gray-100 hover:text-red-600 top-2 right-2">
-                                <x-icon.delete class="h-6" />
+                                <svg class="h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M7 21q-.825 0-1.412-.587Q5 19.825 5 19V6H4V4h5V3h6v1h5v2h-1v13q0 .825-.587 1.413Q17.825 21 17 21ZM17 6H7v13h10ZM9 17h2V8H9Zm4 0h2V8h-2ZM7 6v13Z" />
+                                </svg>
                             </button>
                             <img src="{{ $tempProfilePhoto->temporaryUrl() }}" class="block w-full" />
                         </figure>

@@ -145,7 +145,7 @@ class Index extends Component
     public function switchUser(User $id)
     {
         Auth::user()->impersonate($id);
-        return redirect()->route('package.users.manager.user.index');
+        return redirect()->route('package.users.manager.index');
     }
 
     private function clear()
