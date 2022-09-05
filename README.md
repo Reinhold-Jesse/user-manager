@@ -37,7 +37,7 @@ Copy Package files in the folder.
 */
 ```
 
-**File** -> composer.json
+**File** -> **App root folder** -> composer.json
 
 ```json
 "autoload": {
