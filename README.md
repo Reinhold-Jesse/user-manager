@@ -31,7 +31,7 @@ Copy Package files in the folder.
 /*
 * Package Service Providers...
 */
-    Reinholdjesse\Usermanager\UserManagerServiceProvider::class,
+    Reinholdjesse\Usermanager\UsermanagerServiceProvider::class,
 /*
 * Application Service Providers...
 */
