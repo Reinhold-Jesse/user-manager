@@ -49,7 +49,7 @@ class Index extends Component
 
     public function create()
     {
-        $this->clear();
+
         $this->openEditWindow();
     }
 
@@ -106,6 +106,7 @@ class Index extends Component
 
     public function openEditWindow()
     {
+        $this->clear();
         $this->openEdit = true;
     }
 

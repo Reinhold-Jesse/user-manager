@@ -84,3 +84,29 @@ php artisan vendor:publish --tag=usermanager
 ```php
 Route::get('dashboard/user',[\App\Http\Controllers\UserController::class,'index']);
 ```
+
+---
+
+## Fuatures
+
+Enable or disable fuatures from your packages
+
+### # add your config file of the packages Fuature class
+
+**File** -> config/tallui.php
+
+```php
+use Reinholdjesse\Usermanager\UserManagerFeatures;
+```
+
+add Fuatures to your fuature array
+**File** -> config\tallui.php
+
+```php
+
+'features' => [
+    UserManagerFeatures::userSwitcher(),
+    UserManagerFeatures::apiUsers(),
+],
+
+```

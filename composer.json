@@ -3,7 +3,6 @@
     "description": "User Verwaltung",
     "require": {
         "php": "^8.0.2",
-        "laravel/jetstream": "^2.11",
         "lab404/laravel-impersonate": "^1.7",
         "livewire/livewire": "^2.5"
     },

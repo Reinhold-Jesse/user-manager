@@ -50,27 +50,21 @@
                 </div>
                 <div class="">
                     <div class="py-3">
-                        <x-jet-label value="Name" />
-                        <x-jet-input wire:model="name" type="text" name="name" class="w-full" />
-                        @error($name)
-                            <p class="mt-3 text-red-500">{{ $message }}</p>
-                        @enderror
+                        <x:component::form.label value="Name" />
+                        <x:component::form.input wire:model="name" type="text" name="name" />
+                        <x:component::form.input-error :for="$name" />
                     </div>
 
                     <div class="py-3">
-                        <x-jet-label value="E-Mail-Adresse" />
-                        <x-jet-input wire:model="email" type="email" name="email" class="w-full" />
-                        @error($email)
-                            <p class="mt-3 text-red-500">{{ $message }}</p>
-                        @enderror
+                        <x:component::form.label value="E-Mail-Adresse" />
+                        <x:component::form.input wire:model="email" type="email" name="email" />
+                        <x:component::form.input-error :for="$email" />
                     </div>
 
                     <div class="py-3">
-                        <x-jet-label value="Neus Passwort" />
-                        <x-jet-input wire:model="password" type="text" name="password" class="w-full" />
-                        @error($password)
-                            <p class="mt-3 text-red-500">{{ $message }}</p>
-                        @enderror
+                        <x:component::form.label value="Neues Passwort" />
+                        <x:component::form.input wire:model="password" type="text" name="password" />
+                        <x:component::form.input-error :for="$password" />
                     </div>
                 </div>
             </div>
