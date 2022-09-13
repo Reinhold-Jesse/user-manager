@@ -7,11 +7,6 @@ use App\Models\User;
 
 class UserController extends Controller
 {
-    public function index()
-    {
-        return view('usermanager::user.index');
-    }
-
     public function userImagesCheck()
     {
         $users = User::whereNotNull('profile_photo_url')->get();

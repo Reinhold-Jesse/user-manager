@@ -44,7 +44,7 @@ class Index extends Component
         } else {
             $content = User::orderBy('name')->paginate($this->paginate);
         }
-        return view('usermanager::livewire.user.index', compact('content'));
+        return view('usermanager::livewire.user.index', compact('content'))->layout('component::layouts.dashboard');
     }
 
     public function create()
