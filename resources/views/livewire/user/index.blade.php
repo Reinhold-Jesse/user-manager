@@ -1,6 +1,6 @@
-<div class="">
-    <div class="flex flex-col gap-4 mb-12 md:flex-row">
-        <div class="relative w-full">
+<div class="container mx-auto">
+    <div class="">
+        <div class="relative w-full mb-12 mt-7">
             <x:component::element.search wire:model.debounce.300ms="search" type="text" placeholder="Suche nach User" />
         </div>
 
