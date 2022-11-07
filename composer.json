@@ -1,5 +1,5 @@
 {
-    "name": "reinholdjesse/usermanager",
+    "name": "reinholdjesse/user-manager",
     "description": "User Verwaltung",
     "require": {
         "php": "^8.0.2",
