@@ -14,7 +14,7 @@
                         placeholder="Suche nach User" />
                 </div>
                 <button wire:click="create" type="button"
-                    class="flex items-center justify-center w-56 px-5 text-white bg-green-500 border-0 rounded-md shadow-sm hover:text-white hover:bg-green-600 default-transition">
+                    class="flex items-center justify-center w-56 px-5 py-2 text-white border-0 rounded-md shadow-sm bg-primary-500 hover:text-white hover:bg-primary-600 default-transition">
                     User erstellen
                 </button>
             </div>
@@ -123,9 +123,8 @@
                         </div>
                     </div>
 
-                    @if ($openEdit)
-                        @include('usermanager::livewire.user.edit')
-                    @endif
+                    @include('usermanager::livewire.user.edit')
+
 
                     <div class="mx-5 mt-14">
                         {{ $content->links('livewire::tailwind') }}
