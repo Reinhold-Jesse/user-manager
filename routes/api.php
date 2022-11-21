@@ -9,7 +9,7 @@ if (UserManagerFeatures::managesApiUsers()) {
 
             Route::get('/user/{id}', function (int $id) {
                 if (is_int($id)) {
-                    return \App\Models\User::where('id', $id)->get()->first();
+                    return \App\Models\User::where('id', $id)->first();
                 }
             });
 
