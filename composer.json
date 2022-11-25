@@ -2,7 +2,6 @@
     "name": "reinholdjesse/user-manager",
     "description": "User Verwaltung",
     "require": {
-        "php": "^8.0.2",
         "lab404/laravel-impersonate": "^1.7",
         "reinholdjesse/core": "dev-main"
     },

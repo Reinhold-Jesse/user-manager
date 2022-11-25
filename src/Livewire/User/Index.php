@@ -15,18 +15,28 @@ class Index extends Component
 {
     use WithPagination, WithFileUploads;
 
+    /** @var int|null */
     private $paginate = 50;
+    /** @var string|null */
     public $search;
-    public $openEdit = false;
+    /** @var bool */
+    public $openEdit;
 
-    public $editId = null;
+    /** @var int|null */
+    public $editId;
+
     public $tempProfilePhoto = null;
-
-    public $name = null;
-    public $email = null;
-    public $password = null;
+    /** @var string|null */
+    public $name;
+    /** @var string|null */
+    public $email;
+    /** @var string|null */
+    public $password;
 
     public $folder = 'users/';
+
+    /** @var string|null */
+    public $profile_photo_url;
 
     public function updatingSearch()
     {
